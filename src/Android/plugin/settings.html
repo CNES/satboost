@@ -1,0 +1,77 @@
+<!-- Copyright (c) Viveris Technologies. //-->
+<!-- Licensed under the MIT license. See LICENSE file in the project root for details. //-->
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Various information</title>
+	  <link rel="stylesheet" type="text/css" href="./webboost/injectees/bootstrap/3.1.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/popup.css"/>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Traffic Stats Settings
+        </div>
+        <div class="settings">
+          <h4>Monitoring granularity :</h4>
+          <form id="granularity">
+            <label class="normal" for="granularity">
+              Update stats every
+              <input type="number" id="granularityVal" name="granularityVal" min="0" step="any" lang="en">
+              seconds
+            </label>
+          </form><br>
+          <h4>Choose when to count data consumption :</h4>
+          <form id="count">
+            <input type="radio" id="always" name="interval" value="always">
+            <label for="always">Always</label><br>
+            <input type="radio" id="interval" name="interval" value="limited">
+            <label for="limited">
+              <label for="start-time">Interval from</label>
+              <input id="start-time" type="time" name="start-time">
+              <label for="end-time">to</label>
+              <input id="end-time" type="time" name="end-time">
+            </label>
+          </form><br>
+          <h4>Consumption alert :</h4>
+          <form id="alerts">
+            <input type="checkbox" id="downloadAlert" name="downloadAlert">
+            <label class="normal" for="downloadAlert">
+              Alert me when I reach
+              <input type="number" id="downloadMb" name="downloadMb" min="0">
+              Mb on Download
+            </label><br>
+            <input type="checkbox" id="uploadAlert" name="uploadAlert">
+            <label class="normal" for="uploadAlert">
+              Alert me when I reach
+              <input type="number" id="uploadMb" name="uploadMb" min="0">
+              Mb on Upload
+            </label>
+          </form><br>
+          <h4>Broadcast statistics :</h4>
+          <form id="broadcast">
+            <input type="checkbox" id="broadcastEnable" name="enable">
+            <label class="normal" for="enable">
+              Broadcast statistics to IP
+              <input type="text" id="broadcastIp" name="ip" minlength="7" maxlength="15" size="15" pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$">
+              and port
+              <input type="number" id="broadcastPort" name="port" min="0" max="65535">
+            </label><br>
+            <div class="center-buttons-container">
+              <button type="button" class="btn-wb" id="applySettingsButton">Apply</button>
+              <button type="button" class="btn-wb" id="goToMainPageButton">Close</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="settings.js"></script>
+</html>

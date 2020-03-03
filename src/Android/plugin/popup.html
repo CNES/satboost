@@ -1,0 +1,82 @@
+<!-- Copyright (c) Viveris Technologies. //-->
+<!-- Licensed under the MIT license. See LICENSE file in the project root for details. //-->
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Plugin Web</title>
+  <link rel="stylesheet" type="text/css" href="./webboost/injectees/bootstrap/3.1.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/popup.css"/>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Traffic Stats
+        </div>
+        <div class="panel-stats">
+          <div><div class="stat-name">Downlink Rate : </div><span class="normal" id="downlinkRate"></span></div>
+          <div><div class="stat-name">Uplink Rate : </div><span class="normal" id="uplinkRate"></span></div>
+          <div><div class="stat-name">Total Data Downloaded : </div><span class="normal" id="downlinkData"></span></div>
+          <div><div class="stat-name">Total Data Uploaded : </div><span class="normal" id="uplinkData"></span></div>
+          <div class="center-buttons-container">
+            <button type="button" class="btn-wb" id="settingsButton">Settings</button>
+            <button type="button" class="btn-wb" id="clearStatsButton">Clear Stats</button>
+          </div>
+        </div>
+        <div class="link-container">
+        <a href="info.html">Show more info</a>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Web Boost</div>
+        Configuration for <b id="site-id"></b>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="switch-container">
+                <input type="checkbox" id="switch"/>
+                <label for="switch" class="switch-tail"></label>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              Boosting is <b id="enabled">enabled</b> <b id="disabled">disabled</b> for this website.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <span class="glyphicon glyphicon-download"></span>
+              Blocks boosted on this website: <span id="resources-count"
+                                                  class="badge pull-right"
+                                                  title="Shows total number of boosted files on this tab."></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <ul id="resources-list"></ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <span class="glyphicon glyphicon-dashboard"></span>
+              Total number of boosted blocks:
+              <span id="total-resources-count"
+                  class="badge pull-right"
+                  title="Shows total numbers of all boosted files"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="popup.js"></script>
+<script src="webboost/popup_wb.js"></script>
+
+</body>
+</html>

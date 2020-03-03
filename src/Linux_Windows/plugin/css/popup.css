@@ -1,0 +1,241 @@
+/*
+ * Copyright (c) Viveris Technologies.
+ * Licensed under the MIT license. See LICENSE file in the project root for details.
+ */
+
+body {
+	font-size: 13px;
+	color: rgb(200, 200, 200);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	background-color: rgb(39, 43, 48);
+	font-variant: small-caps;
+}
+
+.normal {
+	font-variant: normal;
+}
+
+#resources-list {
+	color: white;
+}
+
+.panel-default {
+	border-color: rgba(0, 0, 0, 0.6);
+}
+
+.panel {
+	margin-top: 10px;
+	background-color: rgb(46, 51, 56);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.panel-heading {
+	overflow: hidden;
+	text-align: center;
+	font-size: 17px;
+  font-weight: bold;
+}
+
+.panel-body .row:last-child {
+	margin-top: 15px;
+}
+
+a, a:visited, a:hover, a:focus {
+	color: #e0e0e0;
+}
+
+.link-container {
+	text-align: center;
+}
+
+.icon {
+	padding-left: 5px;
+}
+
+.row:first-child {
+	margin-bottom: 10px;
+}
+
+.panel-default > .panel-heading {
+	color: rgb(200, 200, 200);
+	background-color: rgb(62, 68, 76);
+	border-color: rgba(0, 0, 0, 0.6);
+}
+
+h3 {
+	text-align: center;
+}
+
+.glyphicon {
+	margin-right: 5px;
+}
+
+.badge {
+	background-color: #839044;
+	cursor: help;
+}
+
+.switch-container {
+	position: relative;
+	height: 20px;
+	top: 5px;
+}
+
+#switch{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.switch-tail {
+	cursor: pointer;
+	width: 50px;
+	height: 20px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: absolute;
+	top: 0px;
+	left: 10px;
+}
+
+.switch-tail:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 16px;
+	height: 16px;
+	background: #E0E0E0;
+	border-radius: 90px;
+	transition: 0.4s;
+}
+
+input:checked + .switch-tail {
+	background: #839044;
+}
+
+input:checked + .switch-tail:after {
+	left: calc(100% - 2px);
+	transform: translateX(-100%);
+}
+
+.panel-stats > div > div {
+	display: inline-block;
+	text-align: left;
+	width: 13.5em;
+	margin-left: 0.5em;
+}
+
+.stat-name, .param {
+	color: rgb(255, 215, 0);
+}
+
+.profile-name {
+	overflow: hidden;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: disc;
+	padding-left: 2em;
+}
+
+.param-value, .param-unit {
+	color: rgb(200, 200, 200);
+}
+
+.param-unit {
+	margin-left: 0.3em;
+}
+
+.btn-wb {
+	background-color:#E0E0E0;
+	padding:0.3em 0.7em;
+	margin:0.5em 0.3em 0.3em 0;
+	border-radius:0.6em;
+	border-color:#839044;
+	border-width:2.5px;
+	box-sizing: border-box;
+	font-weight:400;
+	color:#000000;
+	text-align:center;
+	position:relative;
+}
+
+#goToMainPageButtonFromInfo {
+	left:50%;
+	transform: translateX(-50%);
+}
+
+#applyProfileButton {
+	margin-left: 1em
+}
+.select {
+	position: relative;
+	display: inline-block;
+	margin:0.5em 0.3em 0.3em 0;
+	width: 140px;
+}
+
+.select select {
+	color:#000000;
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+	padding: 6px 15px;
+	border-color:#839044;
+	border-width:2.5px;
+	border-radius:0.6em;
+	background-color: #e0e0e0;
+	color: #7b7b7b;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.select select::-ms-expand {
+	display: none;
+}
+
+.select select:hover,
+
+.select select:focus {
+	color: #000;
+	background: #ccc;
+}
+
+.select select:disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.select__arrow {
+	position: absolute;
+	top: 14px;
+	right: 15px;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+	border-style: solid;
+	border-width: 8px 5px 0 5px;
+	border-color: #7b7b7b transparent transparent transparent;
+}
+
+.select select:hover ~ .select__arrow,
+.select select:focus ~ .select__arrow {
+	border-top-color: #000;
+}
+
+.select select:disabled ~ .select__arrow {
+	border-top-color: #ccc;
+}
+
+#httpOptDiv {
+	margin-left: 0.5em;
+}
+
+.center-buttons-container {
+	text-align: center;
+}
