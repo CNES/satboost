@@ -3,7 +3,7 @@
 Multiplatform Firefox Add-on allowing to:
 
 * Check the quota used by the machine (bits and bits/s)
-* Collect QoE measurements for satellite/access providers and users: Page Load Time (and other W3C metrics) YouTube metrics.
+* Collect QoE measurements for satellite/access providers and users: Page Load Time (and other W3C metrics) and YouTube metrics.
 * Customise HTTP parameters for clients and enable Web Boost feature (from http://webboost.fse.guru/).
 
 The add-on has proved to reduce Page Load Time down to 30-50% on a real satellite access, mainly thanks to Web Boost.
@@ -15,7 +15,7 @@ The plugin can be used on Linux, Windows and Android OS. The Linux and Windows v
 You find below the complete list of features:
 
 * Collected QoS metrics:
-  - Upload/donwload rate (bits/s)
+  - Upload/download rate (bits/s)
   - Data volume/consumption (bits)
 * Collected QoS metrics:
   - Web browsing: Page Load Time (PLT) and W3C metrics.
@@ -36,7 +36,7 @@ You find below the complete list of features:
 
 The add-on has been tested on Ubuntu 16.04 and 18.04.
 
-Install lastest version of Firefox and daemon dependencies (Python 3.5 or 3.6, pip3 and apscheduler):
+Install latest version of Firefox and daemon dependencies (Python 3.5 or 3.6, pip3 and apscheduler):
 
 ```
 # apt install python3.6
@@ -47,7 +47,7 @@ Install lastest version of Firefox and daemon dependencies (Python 3.5 or 3.6, p
 
 Clone the source code from `https://forge.net4sat.org/viveris/rt-plugin_web`.
 
-Launch the daemon:
+Launch the daemon (with root permissions):
 ```
 $ python3 controller.py <options>
 ```
