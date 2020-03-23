@@ -191,7 +191,7 @@ Builder.load_string("""
         text: 'SATboost Daemon'
     Button:
         id: but_1
-        text: 'Click to start the daemon'
+        text: 'Tap here to start the daemon'
 """)
 
 
@@ -210,7 +210,7 @@ class DaemonForAndroid(GridLayout):
         self.prepare_button_to_stop()
         print('Daemon : starting monitoring')
         daemon.start_monitoring()
-        print('Daemon : Starting HTTP Server on port ', PORT)
+        print('Daemon : starting HTTP Server on port ', PORT)
         server.serve_forever()
 
     def stop_daemon(self, *args):
@@ -223,13 +223,13 @@ class DaemonForAndroid(GridLayout):
 
     @mainthread
     def prepare_button_to_stop(self, *args):
-        self.but_1.text = 'Daemon is running. Click to STOP it.'
+        self.but_1.text = 'Daemon is running. Tap here to STOP it.'
         self.but_1.unbind(on_release=self.start_daemon_thread)
         self.but_1.bind(on_release=self.stop_daemon)
 
     @mainthread
     def prepare_button_to_start(self, *args):
-        self.but_1.text = 'Daemon is stopped. Click to START it.'
+        self.but_1.text = 'Daemon is stopped. Tap here to START it.'
         self.but_1.unbind(on_release=self.stop_daemon)
         self.but_1.bind(on_release=self.start_daemon_thread)
 
