@@ -9,6 +9,7 @@ Multiplatform Firefox Add-on allowing to:
 The add-on has proved to reduce Page Load Time down to 30-50% on a real satellite access, mainly thanks to Web Boost.
 The plugin can be used on Linux, Windows and Android OS. The Linux and Windows versions include all the features while the Android version does not include the Youtube metrics.
 
+This plugin is a PoC (Proof of Concept) resulting from an R&D project. Check LICENSE.md for further information about the guarantees provided.
 
 ## Add-on Features
 
@@ -29,6 +30,8 @@ You find below the complete list of features:
 * Additional features:
   - Alerts on data consumptions.
   - Send metrics to distant IP/port addresses (to be used by service providers).
+
+New features could be added in the future.
 
 ## How to Install 
 
