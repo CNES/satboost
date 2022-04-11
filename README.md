@@ -45,17 +45,16 @@ Install latest version of Firefox and daemon dependencies (Python 3.5 or 3.6, pi
 # apt install python3.6
 # apt install python3-pip
 # pip3 install --upgrade python-iptables apscheduler
-
 ```
 
-Clone the source code from `https://forge.net4sat.org/satboost/satboost`.
+Clone the source code from `https://github.com/CNES/satboost`.
 
 Launch the daemon (with root permissions):
 ```
 $ python3 controller.py <options>
 ```
 
-Add the add-on under xpi format (available in `https://forge.net4sat.org/satboost/satboost/tree/master/installation_package_files/Linux_Windows`) 
+Add the add-on under xpi format (available in `https://github.com/CNES/satboost/tree/master/installation_package_files/Linux_Windows`) 
 to Firefox. Choose the option 'Install Add-on from file' and accept permissions.
 
 
@@ -72,21 +71,21 @@ Download Python apscheduler module from https://files.pythonhosted.org/packages/
 py setup.py install 
 ```
 
-Clone the source code from `https://forge.net4sat.org/satboost/satboost`.
+Clone the source code from `https://github.com/CNES/satboost`.
 
 Launch daemon:
 ```
 py controller.py <options>
 ```
 
-Add the add-on under xpi format (available in `https://forge.net4sat.org/satboost/satboost/tree/master/installation_package_files/Linux_Windows`) 
+Add the add-on under xpi format (available in `https://github.com/CNES/satboost/tree/master/installation_package_files/Linux_Windows`) 
 to Firefox. Choose the option 'Install Add-on from file' and accept permissions.
 
 ### Android
 
 Install the latest version of Firefox for Android.
 
-Download and install the apk packet: https://forge.net4sat.org/satboost/satboost/blob/master/installation_package_files/Android/satboost-daemon-1.0.apk
+Download and install the apk packet: `https://github.com/CNES/satboost/tree/master/installation_package_files/Android/satboost-daemon-1.0.apk`
 
 Open the application named `SATboost daemon`, and click on `Click to start the daemon` to launch the daemon.
 
@@ -94,4 +93,4 @@ Disable the `Signatures required` requirement:
 * Go to `about:config` in Firefox
 * Set `xpinstall.signatures.required` to false
 
-Finally download and open the xpi **from Android Firefox** to install it: https://forge.net4sat.org/satboost/satboost/blob/master/installation_package_files/Android/satboost-1.0-an.xpi
+Finally download and open the xpi **from Android Firefox** to install it: `https://github.com/CNES/satboost/tree/master/installation_package_files/Android/satboost-1.0-an.xpi`
